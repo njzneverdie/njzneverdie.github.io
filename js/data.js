@@ -14,8 +14,8 @@ const profileData = {
     zh: "成大材料學士 ｜ 南加大電機碩士 ｜ BlendEd ｜ 咖啡成癮者"
   },
   location: {
-    en: "Kaohsiung, Taiwan",
-    zh: "高雄市，台灣"
+    en: "Base: Kaohsiung, Taiwan & California, USA",
+    zh: "常住：台灣高雄、美國加州"
   },
   email: "e54111213@gs.ncku.edu.tw",
   about: {
