@@ -1,0 +1,5 @@
+# local tooling (Claude Code session files, not part of the site)
+.claude/
+CLAUDE.md
+Thumbs.db
+desktop.ini

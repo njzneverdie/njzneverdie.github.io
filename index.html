@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daniel Liang // Personal Interface</title>
+<meta name="description" content="Personal portfolio — projects and plans of Chia Yu (Daniel) Liang">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- 開機序列（Boot Sequence）覆蓋層 -->
+<div class="boot-overlay" id="bootOverlay">
+  <div class="boot-lines" id="bootLines"></div>
+  <div class="boot-prompt" id="bootPrompt">CLICK / PRESS ANY KEY TO ENTER</div>
+</div>
+
+<!-- 背景粒子效果 -->
+<canvas id="particles-bg"></canvas>
+
+<!-- 頭盔視角暗角 -->
+<div class="helmet-vignette"></div>
+
+<!-- HUD 角落裝飾 -->
+<div class="hud-corner hud-corner-tl"></div>
+<div class="hud-corner hud-corner-tr"></div>
+<div class="hud-corner hud-corner-bl"></div>
+<div class="hud-corner hud-corner-br"></div>
+
+<!-- 系統狀態列（頭盔 HUD 頂部） -->
+<div class="status-bar" id="statusBar">
+  <span class="status-item">MARK_LXXXV</span>
+  <span class="status-item" id="statusTime">--:--:--</span>
+  <span class="status-item" id="statusCoords">LAT 22.6273 / LON 120.3014</span>
+  <span class="status-item status-scan" id="statusScan">SCANNING<span class="dots"></span></span>
+  <span class="status-item status-power">PWR <span class="power-bar"><span class="power-fill" id="powerFill"></span></span> <span id="powerPct">100%</span></span>
+</div>
+
+<!-- 頂部導覽列 -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="#top" class="nav-logo">DANIEL<span>_LIANG</span></a>
+    <div class="nav-links">
+      <a href="#about" data-flip="inline" data-en="ABOUT" data-zh="關於我"></a>
+      <a href="#experience" data-flip="inline" data-en="EXPERIENCE" data-zh="經歷"></a>
+      <a href="#education" data-flip="inline" data-en="EDUCATION" data-zh="學歷"></a>
+      <a href="#skills" data-flip="inline" data-en="SKILLS" data-zh="技能"></a>
+      <a href="#projects" data-flip="inline" data-en="PROJECTS" data-zh="專案與計畫"></a>
+      <a href="#contact" data-flip="inline" data-en="CONTACT" data-zh="聯絡"></a>
+    </div>
+  </div>
+</nav>
+
+<div id="top"></div>
+
+<!-- 封面 + 大頭照 + 基本資訊 -->
+<header class="profile-header">
+  <div class="cover-photo">
+    <div class="scan-line"></div>
+    <div class="hud-grid"></div>
+  </div>
+  <div class="profile-header-inner">
+    <div class="avatar-wrap">
+      <div class="avatar-ring"></div>
+      <div class="avatar" id="avatarInitials">DL</div>
+    </div>
+    <div class="profile-info">
+      <p class="hud-label">// IDENTITY_VERIFIED</p>
+      <h1 id="profileName">Chia Yu (Daniel) Liang</h1>
+      <p class="headline flip" id="profileHeadline">
+        <span class="flip-inner">
+          <span class="flip-face flip-front" lang="en"><span id="headlineText"></span><span class="cursor">|</span></span>
+          <span class="flip-face flip-back" lang="zh-Hant" id="headlineZh"></span>
+        </span>
+      </p>
+      <p class="location" id="profileLocation">📍 Kaohsiung, Taiwan · <a href="mailto:e54111213@gs.ncku.edu.tw">e54111213@gs.ncku.edu.tw</a></p>
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-primary" data-flip="inline" data-en="CONTACT ME" data-zh="聯絡我"></a>
+        <a href="#projects" class="btn btn-outline" data-flip="inline" data-en="VIEW PROJECTS" data-zh="查看專案"></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- 關於我 -->
+  <section id="about" class="card section hud-tilt">
+    <p class="hud-label">// ABOUT_ME</p>
+    <h2 data-flip="inline" data-en="ABOUT ME" data-zh="關於我"></h2>
+    <p id="aboutText"></p>
+  </section>
+
+  <!-- 經歷 -->
+  <section id="experience" class="card section hud-tilt">
+    <p class="hud-label">// EXPERIENCE_LOG</p>
+    <h2 data-flip="inline" data-en="EXPERIENCE" data-zh="經歷"></h2>
+    <div class="timeline" id="experienceList">
+      <!-- 由 JS 動態產生，見 js/data.js -->
+    </div>
+  </section>
+
+  <!-- 學歷 -->
+  <section id="education" class="card section hud-tilt">
+    <p class="hud-label">// EDUCATION_LOG</p>
+    <h2 data-flip="inline" data-en="EDUCATION" data-zh="學歷"></h2>
+    <div class="timeline" id="educationList">
+      <!-- 由 JS 動態產生 -->
+    </div>
+  </section>
+
+  <!-- 技能 -->
+  <section id="skills" class="card section hud-tilt">
+    <p class="hud-label">// SKILL_MATRIX</p>
+    <h2 data-flip="inline" data-en="SKILLS" data-zh="技能"></h2>
+    <div class="skills-list" id="skillsList">
+      <!-- 由 JS 動態產生 -->
+    </div>
+  </section>
+
+  <!-- 專案與計畫 -->
+  <section id="projects" class="card section hud-tilt">
+    <p class="hud-label">// PROJECT_ARCHIVE</p>
+    <h2 data-flip="inline" data-en="PROJECTS &amp; PLANS" data-zh="專案與計畫"></h2>
+    <p class="section-subtitle" data-flip="inline" data-en="Hover a card to flip it — click to open details" data-zh="滑鼠移到卡片上翻面 — 點擊查看詳細內容"></p>
+    <div class="filter-tabs" id="filterTabs">
+      <button class="filter-tab active" data-filter="all" data-flip="inline" data-en="ALL" data-zh="全部"></button>
+      <button class="filter-tab" data-filter="project" data-flip="inline" data-en="PROJECTS" data-zh="專案"></button>
+      <button class="filter-tab" data-filter="plan" data-flip="inline" data-en="PLANS" data-zh="計畫"></button>
+    </div>
+    <div class="projects-grid" id="projectsGrid">
+      <!-- 由 JS 動態產生 -->
+    </div>
+  </section>
+
+  <!-- 聯絡 -->
+  <section id="contact" class="card section hud-tilt">
+    <p class="hud-label">// TRANSMIT</p>
+    <h2 data-flip="inline" data-en="CONTACT" data-zh="聯絡方式"></h2>
+    <ul class="contact-list" id="contactList">
+      <li>📧 <a href="mailto:e54111213@gs.ncku.edu.tw">e54111213@gs.ncku.edu.tw</a></li>
+      <li>💼 <a href="https://www.linkedin.com/in/chia-yu-liang-5430a8357" target="_blank" rel="noopener">LinkedIn — Chia Yu (Daniel) Liang</a></li>
+      <li>🐙 <a href="https://github.com/njzneverdie" target="_blank" rel="noopener">GitHub — njzneverdie</a></li>
+      <li>🍽️ <a href="https://eatogether.vercel.app" target="_blank" rel="noopener" data-flip="inline" data-en="Eatogether — my latest build" data-zh="Eatogether — 我的最新作品"></a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Chia Yu (Daniel) Liang. All rights reserved.</p>
+</footer>
+
+<!-- 專案詳細內容彈窗 -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-corner modal-corner-tl"></div>
+    <div class="modal-corner modal-corner-br"></div>
+    <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+    <span class="modal-tag" id="modalTag"></span>
+    <h3 id="modalTitle"></h3>
+    <p class="modal-period" id="modalPeriod"></p>
+    <div class="modal-embed" id="modalEmbed"></div>
+    <p id="modalDescription"></p>
+    <div class="modal-tech" id="modalTech"></div>
+    <div class="modal-links" id="modalLinks"></div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
