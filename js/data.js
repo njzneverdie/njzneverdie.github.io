@@ -115,6 +115,24 @@ const skillsData = [
 const projectsData = [
   {
     type: "project",
+    title: { en: "GuanWei — AI BaZi Astrology Platform", zh: "觀微 — AI 八字命盤平台" },
+    period: { en: "2026.07", zh: "2026.07" },
+    summary: {
+      en: "A full-stack AI astrology platform: a deterministic BaZi engine computes the chart, the AI only translates it into plain language. Click to open the live app.",
+      zh: "全端 AI 命理平台：確定性八字引擎負責排盤，AI 只把結果翻成白話。點擊開啟線上 App。"
+    },
+    description: {
+      en: "A \"classical Eastern meets modern SaaS\" platform for BaZi (Four Pillars) astrology, built on a strict layered architecture with a hard red line: every astrological conclusion comes from the deterministic rule engine (calendar + BaZi), and the AI layer only turns the structured JSON into readable language — it never invents results, and photos never touch any AI model. The pure-function engine (solar-term timing, true solar time, Four Pillars with Li-Chun / solar-term boundaries, Ten Gods, Five Elements strength, luck cycles) is covered by 81 unit tests and differentially validated against a reference library. Features a 6-step wizard, an interactive dashboard (four pillars, five-elements chart, luck timeline, personality radar, wealth gauges), photo timeline anchors + client-side k-means palette extraction, AI reading + Q&A (swappable between Anthropic and free OpenAI-compatible providers), Supabase auth/storage protected by RLS, and PDF export. Every reading ships with an \"evidence\" block separating rule-derived facts from AI phrasing. Built end-to-end with Claude Code and deployed on Netlify.",
+      zh: "一個「古典東方 × 現代 SaaS」的八字命盤平台，採嚴格分層架構並設下硬性紅線：命理結論只能來自確定性規則引擎（曆法＋八字），AI 只負責把結構化 JSON 翻成白話、不得發明結果，且照片永不進入任何 AI 模型。純函式引擎（節氣時刻、真太陽時、以立春／節為界的四柱、十神、五行強弱、大運流年）有 81 個單元測試，並與參考套件做差異驗證。功能包含 6 步驟 Wizard、互動式 Dashboard（四柱、五行圖、大運時間軸、人格雷達、財運儀表）、照片時間軸錨點＋瀏覽器端 k-means 抽色主題、AI 解讀與問答（可在 Anthropic 與免費 OpenAI 相容供應商間切換）、Supabase 登入／儲存（RLS 保護）、PDF 匯出。每份解讀都附「推演依據」，清楚區分規則推導與 AI 文字整理。全程以 Claude Code 端到端打造，部署於 Netlify。"
+    },
+    tech: ["Next.js", "TypeScript", "Anthropic API", "Supabase", "Netlify"],
+    embed: { kind: "iframe", src: "https://ilovehanni.netlify.app" },
+    links: [
+      { label: "Live App", url: "https://ilovehanni.netlify.app" }
+    ]
+  },
+  {
+    type: "project",
     title: { en: "Eatogether", zh: "一起吃 Eatogether" },
     period: { en: "2026.06", zh: "2026.06" },
     summary: {
