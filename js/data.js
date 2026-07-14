@@ -115,6 +115,24 @@ const skillsData = [
 const projectsData = [
   {
     type: "project",
+    title: { en: "Chef Jarvis — Personalized AI Cooking Companion", zh: "Chef Jarvis — 個人化 AI 料理助手" },
+    period: { en: "2026.07", zh: "2026.07" },
+    summary: {
+      en: "A profile-aware AI cooking app: it turns a meal idea into a personalized recipe, grocery checklist, healthy swaps, and guided Chef Mode. Click to open the live app.",
+      zh: "會讀懂你的 AI 料理 App：把一個菜色想法變成個人化食譜、購物清單、健康替換與 Chef Mode 引導料理。點擊開啟線上 App。"
+    },
+    description: {
+      en: "A personalized AI cooking companion that starts with the person, not a generic recipe. During onboarding, users set body data, calorie/macro targets, body-composition goal, allergies, dietary needs, dislikes, and available kitchen equipment; every plan is then designed around that profile. Its core principle is personalized healthy swaps — leaner high-protein alternatives for fat-loss/recomposition, protein-forward portions for muscle-gain, and allergy/dietary-safe replacements (lactose-free, gluten-free, nut-safe, shellfish-safe) carried into every meal. A Gemini-powered planner returns ingredients, realistic portions, macros, cooking steps, equipment alternatives, and reuse ideas; USDA FoodData Central reference values load in the background so the recipe is usable immediately. Chef Mode guides cooking step by step with spoken instructions and multiple independent countdowns and stopwatches. Auth, profiles, pantry, saved meal cards, and grocery lists run on Supabase (RLS-protected) with Deno edge functions guarding the AI and nutrition APIs. Built end-to-end with Claude Code.",
+      zh: "一款從「煮的人」而非「通用食譜」出發的個人化 AI 料理助手。使用者在 onboarding 設定身體數據、熱量／三大營養素目標、體態目標、過敏原、飲食需求、不喜歡的食物與現有廚房設備，之後每份計畫都圍繞這份 profile 設計。核心理念是個人化健康替換 — 減脂／增肌減脂者得到更精瘦高蛋白的替代、增肌者得到高蛋白份量建議，並把過敏與飲食安全（無乳糖、無麩質、無堅果、無甲殼類）帶進每一餐。由 Gemini 驅動的規劃器產出食材、實際份量、營養、烹飪步驟、設備替代方案與剩食再利用點子；USDA FoodData Central 參考營養值在背景載入，食譜可立即使用。Chef Mode 以語音指示與多個獨立倒數／碼表逐步引導料理。登入、個人檔案、食材庫、收藏餐點與購物清單皆建於 Supabase（RLS 保護），並以 Deno edge function 保護 AI 與營養 API。全程以 Claude Code 端到端打造。"
+    },
+    tech: ["Supabase", "Gemini API", "Deno Edge Functions", "USDA FoodData Central", "JavaScript"],
+    embed: { kind: "iframe", src: "https://chef-jarvis.pages.dev" },
+    links: [
+      { label: "Live App", url: "https://chef-jarvis.pages.dev" }
+    ]
+  },
+  {
+    type: "project",
     title: { en: "GuanWei — AI BaZi Astrology Platform", zh: "觀微 — AI 八字命盤平台" },
     period: { en: "2026.07", zh: "2026.07" },
     summary: {
