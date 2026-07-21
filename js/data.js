@@ -201,6 +201,22 @@ const projectsData = [
   },
   {
     type: "project",
+    title: { en: "Are You Really Just Sugar? — Soft Candy Mechanics", zh: "你真的只是糖？— 軟糖力學實驗" },
+    period: { en: "2024.12 - 2025.01", zh: "2024.12 - 2025.01" },
+    summary: {
+      en: "Treating a Hi-Chew as an engineering material: compression stress-strain testing under different soaking conditions and loading rates, ending with a shear-thickening demo that punched holes through aluminum cans. Click to view slides.",
+      zh: "把嗨啾當工程材料：不同浸泡條件與加載速率下的壓縮應力應變測試，最後用剪切增稠示範把鋁罐打穿。點擊查看簡報。"
+    },
+    description: {
+      en: "A Mechanical Properties of Materials course project (team of 3) that started from an everyday puzzle: why does soft candy stiffen after a cold drink? We measured how Hi-Chew soft candy deforms under compressive stress, comparing untreated samples against samples soaked for 20 seconds in cola, ice water, and hot water. Two loading modes were tested — slow incremental loading, adding 1 kg weight plates one at a time, and sudden full loading — from which we built load-compression curves and compression stress-strain curves up to roughly 1,450 kPa. The results showed clear environment and rate effects: hot-water-soaked candy softened dramatically and showed the largest strain at every stress level, ice-water-soaked candy stiffened, and fast loading produced a visibly stiffer response than slow loading, revealing the candy's viscoelastic, strain-rate-dependent character. As a finale we demonstrated non-Newtonian shear-thickening behavior: chilled candies thrown at high speed punched holes through aluminum drink cans, a playful proof that something sold as \"just sugar\" can briefly behave like an impact-resistant material.",
+      zh: "材料機械性質課程專案（三人小組），起點是一個日常疑問：為什麼吃軟糖配冷飲會變硬？我們把嗨啾軟糖當作工程材料，量測其在壓應力下的變形行為，比較未處理與分別浸泡可樂、冰水、熱水 20 秒的樣品。實驗設計兩種加載模式 — 慢壓（一次加一片 1 公斤槓片逐步加載）與快壓（一次整個壓上去），據此繪製壓縮量與荷重關係曲線，以及最高約 1,450 kPa 的壓縮應力應變曲線。結果顯示明確的環境與速率效應：泡熱水的軟糖大幅軟化，在每個應力水準下應變都最大；泡冰水的則明顯變硬；快壓的反應比慢壓更硬挺，揭示軟糖黏彈性、應變速率相依的材料特性。壓軸則示範了非牛頓流體的剪切增稠行為：冰鎮後的軟糖高速丟擲竟能把鋁製飲料罐打穿，用趣味的方式證明「只是糖」的東西在瞬間衝擊下也能表現得像抗衝擊材料。"
+    },
+    tech: ["Compression Testing", "Stress-Strain Analysis", "Viscoelasticity", "Non-Newtonian Rheology", "Experimental Design", "Data Visualization"],
+    embed: { kind: "pdf", src: "assets/candy-mechanics-slides.pdf" },
+    links: []
+  },
+  {
+    type: "project",
     title: { en: "Unsupervised SEM Defect Detection", zh: "非監督式學習 SEM 缺陷偵測" },
     period: { en: "2024.08 - Present", zh: "2024.08 - 至今" },
     summary: {
