@@ -185,6 +185,22 @@ const projectsData = [
   },
   {
     type: "project",
+    title: { en: "Smart Steak Probe — MEMS Doneness Sensing Array", zh: "智慧牛排探針 — MEMS 熟度感測陣列" },
+    period: { en: "2026", zh: "2026" },
+    summary: {
+      en: "Reconstructs a steak's internal doneness cross-section in real time without cutting it — 7 MEMS micro-probes, 14 sensing points, inverse heat-conduction + Newtonian Nudging field reconstruction. Click to view slides.",
+      zh: "不切開牛排，即時重建內部熟度剖面 — 7 支 MEMS 微探針、14 個感測點，逆熱傳導 ＋ Newtonian Nudging 熱場重建。點擊查看簡報。"
+    },
+    description: {
+      en: "A concept design combining MEMS microelectromechanical technology, sensing systems, and heat-transfer simulation, aimed at reconstructing a steak's internal doneness distribution in real time without cutting it open — so the cook can pinpoint the ideal moment to take it off the heat. The idea came from a failed attempt at cooking a thick-cut steak: a conventional thermometer only measures a single point, can't reflect the overall heating state, and can't anticipate the carry-over overcooking caused by residual heat, so we proposed replacing single-point measurement with multi-point sensing. The system uses 7 MEMS micro-probes with 14 temperature sensing points in total, sampling temperatures at different depths simultaneously, then combines an inverse heat-conduction model, the heat-diffusion equation, and a Newtonian Nudging algorithm to reconstruct the steak's internal temperature field in real time — visualized as a doneness cross-section so the user reads the meat's interior directly rather than relying on center temperature alone. Compared with commercial steak thermometers, the design offers global multi-point measurement, a micro-invasive thin probe, fast response, and thermal-field reconstruction, lowering the cost of ruining expensive cuts through mistimed heat while demonstrating cross-disciplinary integration of MEMS sensors, embedded systems, numerical simulation, and data visualization. My contributions: originating the product concept and defining the core problem and requirements; building the numerical model of heat conduction inside the steak; designing the thermal-field reconstruction algorithm that rebuilds the 2D temperature distribution from multi-point sensor data; building the temperature-to-doneness mapping that turns numerical results into intuitive doneness imagery; and completing the thermal-image reconstruction and simulation-analysis pipeline to validate the system's feasibility.",
+      zh: "智慧牛排探針是一項結合 MEMS 微機電技術、感測系統與熱傳導模擬的概念設計，目標是在不切開牛排的情況下即時重建內部熟度分布，協助使用者精準掌握最佳起鍋時機。靈感來自一次厚切牛排烹飪失敗的經驗 — 傳統溫度計只能量測單一位置，無法反映整體受熱狀況，也無法預測餘熱造成的過熟問題，因此我們提出以多點感測取代單點量測的解決方案。系統採用 7 支 MEMS 微探針、共 14 個溫度感測點，同步量測不同深度的溫度資訊，再結合逆熱傳導模型、熱擴散方程與 Newtonian Nudging 演算法，即時重建牛排內部的溫度場，並將結果視覺化為熟度剖面圖，讓使用者直接觀察肉品內部熟度，而非僅依賴中心溫度。相較於市售牛排溫度計，本設計具備多點全域量測、微創細探針、快速反應以及熱場重建能力，不僅能降低昂貴食材因火候失誤造成的成本，也展示了 MEMS 感測器、嵌入式系統、數值模擬與資料視覺化的跨領域整合能力。我的貢獻：提出產品概念與核心問題並定義需求、建立牛排內部熱傳導數值模型、設計利用多點感測資料重建二維溫度分布的熱場重建演算法、建立溫度與熟度對應模型將數值結果轉換為直觀的熟度影像，並完成熱影像重建與模擬分析流程以驗證系統可行性。"
+    },
+    tech: ["MEMS Micro Probe Array", "RTD Sensors", "Heat Transfer Simulation", "Inverse Heat Conduction", "Newtonian Nudging", "Thermal Field Reconstruction", "Scientific Computing", "Data Visualization"],
+    embed: { kind: "pdf", src: "assets/steak-probe-slides.pdf" },
+    links: []
+  },
+  {
+    type: "project",
     title: { en: "Unsupervised SEM Defect Detection", zh: "非監督式學習 SEM 缺陷偵測" },
     period: { en: "2026.06", zh: "2026.06" },
     summary: {
