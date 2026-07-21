@@ -51,8 +51,8 @@ const experienceData = [
     org: { en: "National Cheng Kung University · MINA Lab (Part-time)", zh: "國立成功大學 · MINA Lab（兼職）" },
     period: { en: "2024.08 - 2025.06 · Tainan", zh: "2024.08 - 2025.06 · 台南" },
     desc: {
-      en: "Advisor: Prof. Chih-Ming Ting. Systematically synthesized and electrochemically characterized binary/ternary Ni-based alloy catalysts (Ni–Co, Ni–Cu, Ni–Mn and ternary combinations) on nickel foam electrodes for ethylene glycol oxidation reactions (EGOR). The optimized ternary NiCuMn catalyst achieved the lowest onset potential (≈1.30 V vs. RHE) with ~24% lower charge-transfer resistance and ~35% higher catalytic current density. Accepted at 2026 RiSER Conference (Sustainable Energy).",
-      zh: "指導教授：Prof. Chih-Ming Ting。系統性合成並電化學表徵二元／三元鎳基合金催化劑（Ni–Co、Ni–Cu、Ni–Mn 及三元組合）用於乙二醇氧化反應（EGOR）。三元 NiCuMn 催化劑達到最低起始電位（≈1.30 V vs. RHE），電荷轉移阻抗降低約 24%、催化電流密度提升約 35%。成果已被 2026 RiSER Conference（Sustainable Energy）接受。"
+      en: "Advisor: Prof. Chih-Ming Ting. Systematically synthesized and electrochemically characterized binary/ternary Ni-based alloy catalysts (Ni–Co, Ni–Cu, Ni–Mn and ternary combinations) on nickel foam electrodes for ethylene glycol oxidation reactions (EGOR). The optimized ternary NiCuMn catalyst achieved the lowest onset potential (≈1.30 V vs. RHE) with over 35% lower charge-transfer resistance and ~25% higher catalytic current density (330 mA cm⁻² at 2.0 V). Accepted at 2026 RiSER Conference (Sustainable Energy).",
+      zh: "指導教授：Prof. Chih-Ming Ting。系統性合成並電化學表徵二元／三元鎳基合金催化劑（Ni–Co、Ni–Cu、Ni–Mn 及三元組合）用於乙二醇氧化反應（EGOR）。三元 NiCuMn 催化劑達到最低起始電位（≈1.30 V vs. RHE），電荷轉移阻抗降低超過 35%、催化電流密度提升約 25%（2.0 V 下 330 mA cm⁻²）。成果已被 2026 RiSER Conference（Sustainable Energy）接受。"
     }
   }
 ];
@@ -176,8 +176,8 @@ const projectsData = [
       zh: "評估鎳基合金在乙二醇氧化反應（EGOR）中的催化活性，成果被 2026 RiSER 會議接受。點擊查看論文海報。"
     },
     description: {
-      en: "At NCKU MINA Lab, systematically synthesized and characterized Ni–Co, Ni–Cu, Ni–Mn and ternary alloy catalysts on nickel foam electrodes. The optimized ternary NiCuMn catalyst achieved the lowest onset potential (≈1.30 V vs. RHE) and the highest electron transfer efficiency; compared to binary systems, charge-transfer resistance (EIS) dropped ~24% and catalytic current density (LSV) rose ~35%. SEM revealed NiCuMn's hybrid nanoparticle/nanosheet morphology providing high surface area and efficient mass transport. Accepted at 2026 RiSER Conference (Sustainable Energy).",
-      zh: "在 NCKU MINA Lab 以鎳發泡電極系統性合成並表徵 Ni–Co、Ni–Cu、Ni–Mn 與三元合金催化劑。最佳化的三元 NiCuMn 催化劑達到最低起始電位（≈1.30 V vs. RHE）與最高電子轉移效率；相較二元系統，電荷轉移阻抗（EIS）降低約 24%、催化電流密度（LSV）提升約 35%。透過 SEM 建立奈米結構與效能的關聯，發現 NiCuMn 的奈米顆粒／奈米片混合形貌提供高比表面積與高效質傳。成果已被 2026 RiSER Conference（Sustainable Energy）接受。"
+      en: "At NCKU MINA Lab, systematically synthesized and characterized Ni–Co, Ni–Cu, Ni–Mn and ternary alloy catalysts on nickel foam electrodes. The optimized ternary NiCuMn catalyst achieved the lowest onset potential (≈1.30 V vs. RHE) and the highest electron transfer efficiency; compared to binary systems, charge-transfer resistance (EIS) dropped over 35% and catalytic current density (LSV) rose ~25% (330 mA cm⁻² at 2.0 V). SEM revealed NiCuMn's hybrid nanoparticle/nanosheet morphology providing high surface area and efficient mass transport. Accepted at 2026 RiSER Conference (Sustainable Energy).",
+      zh: "在 NCKU MINA Lab 以鎳發泡電極系統性合成並表徵 Ni–Co、Ni–Cu、Ni–Mn 與三元合金催化劑。最佳化的三元 NiCuMn 催化劑達到最低起始電位（≈1.30 V vs. RHE）與最高電子轉移效率；相較二元系統，電荷轉移阻抗（EIS）降低超過 35%、催化電流密度（LSV）提升約 25%（2.0 V 下 330 mA cm⁻²）。透過 SEM 建立奈米結構與效能的關聯，發現 NiCuMn 的奈米顆粒／奈米片混合形貌提供高比表面積與高效質傳。成果已被 2026 RiSER Conference（Sustainable Energy）接受。"
     },
     tech: ["Electrochemistry (EIS/LSV)", "SEM", "Origin", "NOVA"],
     embed: { kind: "pdf", src: "assets/egor-poster.pdf" },
@@ -202,7 +202,7 @@ const projectsData = [
   {
     type: "project",
     title: { en: "Unsupervised SEM Defect Detection", zh: "非監督式學習 SEM 缺陷偵測" },
-    period: { en: "2026.06", zh: "2026.06" },
+    period: { en: "2024.08 - Present", zh: "2024.08 - 至今" },
     summary: {
       en: "Detecting defects in SEM grain images without labels, using PCA + K-means and a CNN Autoencoder. Click to view slides.",
       zh: "不需標註資料，用 PCA + K-means 與 CNN Autoencoder 自動偵測 SEM 晶粒顯微影像中的缺陷。點擊查看簡報。"
@@ -220,14 +220,14 @@ const projectsData = [
   {
     type: "project",
     title: { en: "CNN SEM Image Classification", zh: "CNN SEM 影像分類" },
-    period: { en: "2026.06", zh: "2026.06" },
+    period: { en: "2024.08 - Present", zh: "2024.08 - 至今" },
     summary: {
-      en: "Classifying 18,577 SEM images into 10 material categories with InceptionV3 transfer learning — 82.2% test accuracy. Click to view slides.",
-      zh: "以 InceptionV3 遷移學習分類 18,577 張 SEM 影像至 10 個材料類別，測試準確率 82.2%。點擊查看簡報。"
+      en: "Classifying SEM images into 10 material categories with InceptionV3 transfer learning — 82.78% test accuracy. Click to view slides.",
+      zh: "以 InceptionV3 遷移學習分類 SEM 影像至 10 個材料類別，測試準確率 82.78%。點擊查看簡報。"
     },
     description: {
-      en: "A complete deep learning pipeline that classifies 18,577 scanning electron microscope (SEM) images into 10 material classes (MEMS devices, nanowires, particles, biological samples, etc.). Uses transfer learning with an ImageNet-pretrained InceptionV3 backbone, combined with class weighting and imbalanced-data handling (imbalanced-learn), achieving 82.2% test accuracy.",
-      zh: "建立完整的深度學習 pipeline，將 18,577 張掃描式電子顯微鏡（SEM）影像自動分類至 10 個材料類別（MEMS 元件、奈米線、顆粒、生物樣本等）。以 ImageNet 預訓練的 InceptionV3 為骨幹進行遷移學習，搭配類別權重與不平衡資料處理（imbalanced-learn），達到 82.2% 測試準確率。"
+      en: "A complete deep learning pipeline that classifies scanning electron microscope (SEM) images into 10 material classes (MEMS devices, nanowires, particles, biological samples, etc.), trained on an augmented dataset derived from 13,003 images. Uses transfer learning with an ImageNet-pretrained InceptionV3 backbone, combined with class weighting and imbalanced-data handling (imbalanced-learn), achieving 82.78% test accuracy and a 0.82 weighted F1-score on an independent 2,787-image test set.",
+      zh: "建立完整的深度學習 pipeline，將掃描式電子顯微鏡（SEM）影像自動分類至 10 個材料類別（MEMS 元件、奈米線、顆粒、生物樣本等），以 13,003 張影像擴增後的資料集訓練。以 ImageNet 預訓練的 InceptionV3 為骨幹進行遷移學習，搭配類別權重與不平衡資料處理（imbalanced-learn），在獨立的 2,787 張測試集上達到 82.78% 測試準確率與 0.82 加權 F1 分數。"
     },
     tech: ["TensorFlow", "InceptionV3", "Transfer Learning", "imbalanced-learn"],
     embed: { kind: "pdf", src: "assets/ml-mse-project-2.pdf" },
